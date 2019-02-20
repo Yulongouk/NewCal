@@ -1,0 +1,50 @@
+<!--
+	Title	   : Calculator
+	Version	 : 1.0
+	Language	: HTML
+	Discription : A Simple Calculator
+	Author	  : Bad_Bit
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+</head>
+<body onload="init()">
+	<div class="wrapper">
+		<div class="display">
+			<div id="expression">
+				00
+			</div>
+			<div id="input">
+				00
+			</div>
+		</div>
+		<div class="num-pad">
+			<button class="empty"></button>
+			<button class="empty"></button>
+			<button onclick="press('erase')">&lt;</button>
+			<button class="on" onclick="press('on')">ON</button>
+			<button onclick="press('7')">7</button>
+			<button onclick="press('8')">8</button>
+			<button onclick="press('9')">9</button>
+			<button class="active" onclick="press('x')">×</button>
+			<button onclick="press('4')">4</button>
+			<button onclick="press('5')">5</button>
+			<button onclick="press('6')">6</button>
+			<button class="active" onclick="press('/')">÷</button>
+			<button onclick="press('1')">1</button>
+			<button onclick="press('2')">2</button>
+			<button onclick="press('3')">3</button>
+			<button class="active" onclick="press('-')">-</button>
+			<button onclick="press('.')">.</button>
+			<button onclick="press('0')">0</button>
+			<button onclick="press('=')">=</button>
+			<button class="active" onclick="press('+')">+</button>
+		</div>
+	</div>
+</body>
+</html>
